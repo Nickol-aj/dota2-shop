@@ -1,0 +1,194 @@
+.container {
+  display: flex;
+  max-height: 80vh;
+  gap: 30px;
+  padding: 25px;
+  background: #0d0e13;
+  border-radius: 12px;
+  overflow: auto;
+
+  .video__block {
+    position: relative;
+    width: 420px;
+    height: 280px;
+    border: 1px solid #272b3f;
+    border-radius: 12px;
+    overflow: hidden;
+    img,
+    video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .description__block {
+    max-width: 500px;
+    margin-top: 10px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      position: relative;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      margin-top: 32px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #adfcff;
+      }
+    }
+
+    .item__description {
+      max-height: 340px;
+      color: #fff;
+      line-height: 20px;
+      p {
+        margin-top: 20px;
+      }
+    }
+
+    .item__price {
+      display: flex;
+      align-items: center;
+      width: 206px;
+      background: #1f2233;
+      border-radius: 8px;
+      font-size: 24px;
+      color: #adfcff;
+      height: 40px;
+
+      .real__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 206px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #adfcff;
+        background: #1f2233;
+
+        span {
+          font-size: 20px;
+          margin-left: 8px;
+        }
+      }
+      .sale__price {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        background: #363c59;
+        padding: 0 14px;
+        border-radius: 0 8px 8px 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ff9839;
+        text-decoration: line-through;
+
+        div {
+          position: absolute;
+          top: -14px;
+          right: -14px;
+          background: #ff7a00;
+          box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.4),
+            0 8px 12px -2px rgba(255, 122, 0, 0.4);
+          padding: 2px 8px;
+          border-radius: 32px;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+    }
+
+    .hero__description {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+
+      .hero__name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #171a26;
+        height: 36px;
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #fff;
+
+        img {
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+      }
+
+      .item__kind {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        padding: 0 8px;
+        margin: 4px 12px 4px 0;
+        background: #171a26;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .hero__grade {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #171a26;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        height: 32px;
+        padding: 0 8px;
+        font-weight: 600;
+      }
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 176px;
+    height: 48px;
+    margin-top: 24px;
+    background: #adfcff;
+    box-shadow: 0 8px 12px rgba(173, 252, 255, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0a0a0c;
+    transition-duration: 0.3s;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

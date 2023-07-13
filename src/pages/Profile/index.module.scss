@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: auto;
+  background: #0d0e13;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #adfcff;
+
+    @media (max-width: 380px) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.sort {
+  position: relative;
+  z-index: 1;
+  .label {
+    display: flex;
+    align-items: center;
+
+    b {
+      margin-right: 8px;
+      color: #464d72;
+    }
+
+    span {
+      font-size: 14px;
+      color: #adfcff;
+      cursor: pointer;
+    }
+  }
+
+  .popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    padding: 10px 0;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: black;
+        }
+      }
+    }
+  }
+}

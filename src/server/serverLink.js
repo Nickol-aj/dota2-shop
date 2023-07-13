@@ -1,0 +1,10 @@
+export const BASE_URL = "http://34.78.241.147/";
+export const PRODUCTS_URL = `${BASE_URL}api/v1/items/`;
+export const CATEGORIES_URL = `${BASE_URL}api/v1/categories/`;
+export const BASKET_URL = `${BASE_URL}api/v1/basket/`;
+export const LOGIN_URL = `${BASE_URL}api/token/`;
+export const REGISTRATION_URL = `${BASE_URL}api/v1/registration/`;
+export const PER_CABINET = `${BASE_URL}api/v1/per-cab/`;
+export const RESET_PASSWORD = `${BASE_URL}api/v1/reset-password/`; 
+export const CHANGE_PASSWORD = `${BASE_URL}api/v1/change-password/`;
+export const SKINS_COLLECTION = `${BASE_URL}api/v1/collection/`;

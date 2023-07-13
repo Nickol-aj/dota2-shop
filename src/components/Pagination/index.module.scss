@@ -1,0 +1,75 @@
+.root {
+  display: flex;
+  margin-left: 10px;
+
+  li {
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+
+    a {
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: #464d72;
+      transition-duration: 0.3s;
+
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+      }
+    }
+  }
+
+  li:first-child,
+  :last-child {
+    a {
+      svg {
+        fill: #464d72;
+        transition-duration: 0.3s;
+
+        &:hover {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  li:first-child {
+    margin-right: 10px;
+  }
+
+  li:last-child {
+    margin-left: 10px;
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: #1f2233;
+        color: #fff;
+      }
+    }
+
+    .selected {
+      a {
+        &:hover {
+          background-color: #1f2233;
+        }
+      }
+    }
+
+    .disabled {
+      a {
+        &:hover {
+          background-color: transparent;
+          color: #464d72;
+        }
+      }
+    }
+  }
+}

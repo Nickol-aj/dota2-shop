@@ -1,0 +1,110 @@
+.header {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: #0d0e13;
+  border-bottom: 0.16rem solid #232437;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4.5rem;
+
+    .left__block {
+      display: flex;
+      align-items: center;
+
+      .header__logo {
+      }
+
+      .header__menu {
+        .menu__list {
+          margin-left: 50px;
+
+          li.menu__item {
+            position: relative;
+            display: inline-block;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #464d72;
+            cursor: pointer;
+
+            a {
+              color: #464d72;
+              text-decoration: none;
+              transition: all 0.3s;
+
+              &:hover {
+                color: #adfcff;
+              }
+
+              &.active {
+                color: #adfcff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right__block {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      div.cart {
+        position: relative;
+        span {
+          position: absolute;
+          top: -7px;
+          left: 15px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 6px;
+          background: #4664ff;
+          box-shadow: 0 3px 6px rgba(70, 100, 255, 0.2);
+          border: 1px solid #232437;
+          border-radius: 20px;
+          font-size: 11px;
+          color: #fff;
+        }
+
+        svg {
+          fill: #464d72;
+          transition: fill 0.3s;
+          &:hover {
+            fill: #fff;
+          }
+        }
+      }
+
+      div.profile {
+        svg {
+          fill: #464d72;
+          transition: fill 0.3s;
+          &:hover {
+            fill: #fff;
+          }
+        }
+      }
+
+      div.logout {
+        margin-left: 10px;
+        span {
+          font-size: 15px;
+          font-weight: 500;
+          color: #464d72;
+          transition: color 0.3s;
+          cursor: pointer;
+          &:hover {
+            color: #ff5500;
+          }
+        }
+      }
+    }
+  }
+}

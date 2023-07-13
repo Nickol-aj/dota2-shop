@@ -1,0 +1,21 @@
+.content__error-container {
+  .content__error-img-block {
+    img {
+    }
+  }
+  .content__error-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #adfcff;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #727bac;
+    }
+  }
+}
