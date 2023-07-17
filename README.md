@@ -1,1 +1,1 @@
-# dota 2-shop
+# dota 2 shop
